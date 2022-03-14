@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.noear</groupId>
+    <artifactId>water-examples</artifactId>
+    <version>dev</version>
+    <packaging>pom</packaging>
+
+    <name>_root</name>
+    <description>Java project for water</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <modules>
+        <module>demo00-common</module>
+
+        <module>demo01-springboot/demo01-app</module>
+        <module>demo01-springboot/demo01-rpc-service</module>
+
+        <module>demo02-solon/demo02-app</module>
+        <module>demo02-solon/demo02-rpc-service</module>
+
+
+        <module>demo10-api</module>
+
+        <module>demo20-solon/demo20-app</module>
+        <module>demo20-solon/demo20-rpc-service</module>
+
+        <module>demo21-api</module>
+
+        <module>demo22-test</module>
+    </modules>
+</project>

@@ -1,0 +1,11 @@
+server.port: 7112
+
+solon.app:
+  name: "helloapi"
+  group: "demo"
+
+
+solon.cloud.water:
+  server: "121.41.104.216:9371"   #water服务地址
+  config:
+    load: "test.properties"

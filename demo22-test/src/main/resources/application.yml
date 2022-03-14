@@ -1,0 +1,10 @@
+server.port: 7181
+
+solon.app:
+  group: "water"
+  name: "testapi"
+
+solon.cloud.water:
+  server: "121.41.104.216:9371"   #water服务地址
+  log:
+    logger: "water_log_admin"

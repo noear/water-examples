@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//noear.org//DTD Mapper 3.0//EN" "http://noear.org/dtd/weed3-mapper.dtd">
+<mapper namespace="demo.dso.mapper.WaterMapper"
+        import="demo.model.*"
+        db="db_water">
+
+
+    <sql id="getConfig" caching="cache" cacheTag="config_${tag}_${key}" usingCache="300" return="ConfigModel">
+        select * from water_cfg_properties where tag=@{tag:String} and `key` = @{key:String}
+    </sql>
+
+    <sql id="delConfig" caching="cache" cacheClear="config_${tag}_${key}" declare="tag:String,key:String">
+        delete from water_cfg_properties where tag='11111'
+    </sql>
+
+</mapper>

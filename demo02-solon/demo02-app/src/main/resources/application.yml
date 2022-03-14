@@ -1,0 +1,8 @@
+
+solon.app:
+  name: "demoapp"
+  group: "demo"
+
+solon.cloud.water:
+  server: "121.41.104.216:9371"  #真实开发，建议使用域
+
