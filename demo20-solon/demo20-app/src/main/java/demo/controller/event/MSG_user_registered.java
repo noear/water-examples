@@ -10,7 +10,7 @@ import org.noear.solon.cloud.model.Event;
 @CloudEvent("user.registered")
 public class MSG_user_registered implements CloudEventHandler {
     @Override
-    public boolean handler(Event event) throws Throwable {
+    public boolean handle(Event event) throws Throwable {
         System.out.println("有用户注册了");
         return true;
     }

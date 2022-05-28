@@ -15,7 +15,7 @@ public class TestMessage implements CloudEventHandler {
     static Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @Override
-    public boolean handler(Event event) throws Throwable {
+    public boolean handle(Event event) throws Throwable {
         logger.info("有消息过来了");
 
         Event event1 = new Event("test.hello", event.content());

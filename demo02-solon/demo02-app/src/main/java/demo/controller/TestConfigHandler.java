@@ -15,7 +15,7 @@ import org.noear.solon.cloud.model.Config;
 @CloudConfig("water")
 public class TestConfigHandler implements CloudConfigHandler {
     @Override
-    public void handler(Config config) {
+    public void handle(Config config) {
         if (Utils.isNotEmpty(config.value())) {
             log.warn(config.value());
         }

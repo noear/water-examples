@@ -14,7 +14,7 @@ import org.noear.water.utils.Datetime;
 public class TestMessageHandler implements CloudEventHandler {
 
     @Override
-    public boolean handler(Event event) throws Throwable {
+    public boolean handle(Event event) throws Throwable {
         Datetime dt = Datetime.Now().addSecond(10);
 
         CloudClient.event()
