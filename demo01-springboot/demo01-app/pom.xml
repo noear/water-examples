@@ -12,9 +12,11 @@
     <name>${project.artifactId}</name>
     <description>Java project for water</description>
 
-    <properties>
-        <solon.ver>1.8.1</solon.ver>
-    </properties>
+    <parent>
+        <groupId>org.noear</groupId>
+        <artifactId>solon-parent</artifactId>
+        <version>1.8.1</version>
+    </parent>
 
     <dependencies>
         <dependency>
@@ -26,26 +28,22 @@
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>water-solon-plugin</artifactId>
-            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon-springboot-starter</artifactId>
-            <version>${solon.ver}</version>
         </dependency>
 
         <!-- rpc client -->
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nami.channel.http.okhttp</artifactId>
-            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>nami.coder.snack3</artifactId>
-            <version>${solon.ver}</version>
         </dependency>
 
         <!-- rpc client end -->

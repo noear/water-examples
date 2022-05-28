@@ -12,9 +12,11 @@
     <name>${project.artifactId}</name>
     <description>Java project for water</description>
 
-    <properties>
-        <solon.ver>1.8.1</solon.ver>
-    </properties>
+    <parent>
+        <groupId>org.noear</groupId>
+        <artifactId>solon-parent</artifactId>
+        <version>1.8.1</version>
+    </parent>
 
     <dependencies>
         <dependency>
@@ -26,13 +28,11 @@
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>solon-rpc</artifactId>
-            <version>${solon.ver}</version>
         </dependency>
 
         <dependency>
             <groupId>org.noear</groupId>
             <artifactId>water-solon-plugin</artifactId>
-            <version>${solon.ver}</version>
         </dependency>
 
 
@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <compilerArgument>-parameters</compilerArgument>
                     <source>1.8</source>
